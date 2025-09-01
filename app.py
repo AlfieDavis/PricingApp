@@ -31,7 +31,7 @@ credentials = {
         },
         "leila": {
             "name": "Leila",
-            "password": "$2b$12$ZtpVrH62HmlrlfGB7KFFge36KhGC0GNb74lLanNrs9CusW5DaC0de"",
+            "password": "$2b$12$ZtpVrH62HmlrlfGB7KFFge36KhGC0GNb74lLanNrs9CusW5DaC0de",
         },
     }
 }
