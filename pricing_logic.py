@@ -433,28 +433,14 @@ def process_pricing(
             upc.loc[excl_mask, "reasons"].astype(str).str.rstrip(";") + ";EXCLUDE_DEPARTMENT:" + tag.astype(str)
         ).str.strip(";")
 
-        # Cost choice: respect POS default, but still prefer UNFI if available
+    # Cost choice: UNFI preferred, then KeHE
     upc["has_unfi"] = upc["unfi_cost"].notna()
     upc["has_kehe"] = upc["kehe_cost"].notna()
-
     def choose_cost(r):
-        # If POS says KEHE, but UNFI has cost, still use UNFI
-        if r.get("default_supplier") == "KEHE":
-            if pd.notna(r.get("unfi_cost")):
-                return r["unfi_cost"], "UNFI"
-            if pd.notna(r.get("kehe_cost")):
-                return r["kehe_cost"], "KEHE"
-        else:
-            # Default logic: UNFI first
-            if pd.notna(r.get("unfi_cost")):
-                return r["unfi_cost"], "UNFI"
-            if pd.notna(r.get("kehe_cost")):
-                return r["kehe_cost"], "KEHE"
+        if pd.notna(r.get("unfi_cost")): return r["unfi_cost"], "UNFI"
+        if pd.notna(r.get("kehe_cost")): return r["kehe_cost"], "KEHE"
         return np.nan, "NONE"
-
     upc["base_cost_used"], upc["cost_source"] = zip(*upc.apply(choose_cost, axis=1))
-
-
 
     # Ideal price and epsilon tweak (skip excluded)
     def ideal_from_margin(r):

@@ -3,6 +3,7 @@ pandas==2.2.2
 numpy==1.26.4
 openpyxl==3.1.2
 python-dateutil==2.9.0.post0
-streamlit-authenticator==0.3.2
 
+# Added dependencies for authentication and password hashing
+streamlit-authenticator==0.3.2
 passlib[bcrypt]==1.7.4
