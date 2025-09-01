@@ -1,9 +1,7 @@
-streamlit==1.37.1
-pandas==2.2.2
-numpy==1.26.4
-openpyxl==3.1.2
-python-dateutil==2.9.0.post0
-
-# Added dependencies for authentication and password hashing
+streamlit
+pandas
+numpy
+openpyxl
+python-dateutil
 streamlit-authenticator==0.3.2
 passlib[bcrypt]==1.7.4
