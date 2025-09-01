@@ -31,15 +31,15 @@ credentials = {
         },
         "leila": {
             "name": "Leila",
-            "password": "$2b$12$ZtpVrH62HmlrlfGB7KFFge36KhGC0GNb74lLanNrs9CusW5DaC0de",
+            "password": "$2b$12$XkUfL8m3kVWOxtwJu0KlbO.s8tS9B8fDmbhI72uzndF8ZFrw5OzkC",
         },
     }
 }
 
 authenticator = stauth.Authenticate(
     credentials,
-    "coop_pricing_app",  # cookie name
-    "abcdef",           # signature key
+    "coop_pricing_app_5",  # rotate cookie name to avoid stale session
+    "abcdef",              # signature key
     cookie_expiry_days=30,
 )
 
