@@ -26,11 +26,11 @@ credentials = {
             "password": "$2b$12$8rxnD6N3F7tNwImAyt3VROvbnlz.YnOf8Ck2xnwbIX9jfojllHPHC",
         },
         "jordan": {
-            "name": "jordan",
+            "name": "Jordan",
             "password": "$2b$12$ZtpVrH62HmlrlfGB7KFFge36KhGC0GNb74lLanNrs9CusW5DaC0de",
         },
         "leila": {
-        "name": "leila",
+        "name": "Leila",
         "password": "$2b$12$zffamgi.MQch1QPG.Oa02ujhQ22jZVM8O8rxnwuah.MJ96Nq2vG0S"
         }
     }
