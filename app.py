@@ -22,13 +22,19 @@ st.set_page_config(page_title="Co-op Monthly Pricing", layout="wide")
 credentials = {
     "usernames": {
         "admin": {
-            "name": "Admin User",
+            "name": "Admin",
             "password": "$2b$12$8rxnD6N3F7tNwImAyt3VROvbnlz.YnOf8Ck2xnwbIX9jfojllHPHC",
         },
         "jordan": {
             "name": "jordan",
             "password": "$2b$12$ZtpVrH62HmlrlfGB7KFFge36KhGC0GNb74lLanNrs9CusW5DaC0de",
         },
+        "leila": {
+        "name": "leila",
+        "password": "$2b$12$p.fI6v1tvErvlFpIvFp1XuWc0NFCUQFFTXGjxM5IWMu7W77QVZBj."
+        },
+    }
+}
     }
 }
 
