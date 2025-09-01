@@ -23,13 +23,11 @@ credentials = {
     "usernames": {
         "admin": {
             "name": "Admin User",
-            # bcrypt hash for "password123"
             "password": "$2b$12$8rxnD6N3F7tNwImAyt3VROvbnlz.YnOf8Ck2xnwbIX9jfojllHPHC",
         },
-        "emily": {
-            "name": "Emily Laird",
-            # bcrypt hash for "test456"
-            "password": "$2b$12$QudMjH4TT.4Y9oN9z/Hyd.L/2qB5puwmP9u9N4cQZ08uP67CEbewe",
+        "jordan": {
+            "name": "jordan",
+            "password": "$2b$12$ZtpVrH62HmlrlfGB7KFFge36KhGC0GNb74lLanNrs9CusW5DaC0de",
         },
     }
 }
