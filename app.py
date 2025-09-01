@@ -35,8 +35,6 @@ credentials = {
         }
     }
 }
-    }
-}
 
 authenticator = stauth.Authenticate(
     credentials,
